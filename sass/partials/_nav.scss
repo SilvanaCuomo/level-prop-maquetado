@@ -1,0 +1,86 @@
+//Menu
+nav{
+    .menuMobile{
+        position: relative;
+        width: 20px;
+        height: 20px;
+        background: url(../assets/images/icons/navIcon.svg) no-repeat;
+        background-position: 50%;
+        background-size: cover;
+        display: none;
+        cursor: pointer;
+    }
+    .menu-top{
+        background-color: $white;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        .row{
+            max-width: 1440px;
+            width:100%;
+            margin: 0 3%;
+            .menuTop {
+                padding: 25px 0;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                .item-menu-left{
+                    .logo{
+                        width: 120px;
+                        height: 30px;
+                    }
+                }
+                .item-menu-right{
+                    .login{
+                        width: 92px;
+                        height: 40px;
+                        background-color: $blue-navy;
+                        color: $white;
+                        font-family: $font-RobotoRegular;
+                        font-size: 14px;
+                        font-weight: 600;
+                        border: 1px solid $gray;
+                        border-radius: 5px;
+                    }
+                }
+            }
+        }
+    }
+
+    .navBar{
+        background-color: $orange;
+        height: 46px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .row{
+            max-width: 1440px;
+            width: 100%;
+            margin: 0 3%;
+            a{
+                text-decoration: none;
+                color: $white;
+                font-size: 16px;
+                font-weight: 600;
+                padding-right: 5%;
+            }
+        }
+    }
+}
+
+@media screen and (min-width:$media-sm) and (max-width:$media-md){
+}
+
+@media screen and (max-width:$media-sm){
+    nav{
+        .menuMobile{
+            display: block;
+        }
+        .menu-top{
+        }
+        .navBar{
+            display: none;
+            visibility: hidden;
+        }
+    }
+}

@@ -1,0 +1,268 @@
+.container{
+    //Filters
+    .filter{
+        display: flex;
+        justify-content: center;
+        background-color: $gray-bg;
+        .row{
+            display: flex;
+            justify-content: space-between;
+            align-content: center;
+            padding-top: 32px;
+            padding-bottom: 70px;
+            .filterText{
+                span{
+                    font-family: $font-MuliExtraBold;
+                    font-size: 22px;
+                    line-height: 26px;
+                    color: $gray-bluish;
+                    text-align: left;
+                }
+            }
+        }
+    }
+
+    //Properties details
+    .detailsProp{
+        background-color: $gray-bg;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        .detailsContent{
+            .first{
+                border-top-right-radius: 10px;
+                border-top-left-radius: 10px;
+            }
+            .last{
+                border-bottom-right-radius: 10px;
+                border-bottom-left-radius: 10px;
+            }
+            .card-container-place{
+                padding: 34px 48px;
+                background-color: $white;
+                border-bottom: 1px solid $gray-light;
+                .card-place{
+                    display: flex;
+                    align-content: center;
+                    align-items: center;
+                    .card-image-place{
+                        width: 40%;
+                        .status{
+                            //width: 161px;
+                            //height: 50px;
+                            border-radius: 3px;
+                            position: absolute;
+                            margin: 1%;
+                            font-size: 19px;
+                            font-weight: 700;
+                            padding: 15px 40px;
+                            text-transform: uppercase;
+                            font-family: $font-RobotoBold;
+                        }
+                        .publicado{
+                            color: $status-green-txt;
+                            background-color: $status-green-bg;
+                        }
+                        .arrendado{
+                            color: $status-blue-txt;
+                            background-color: $status-blue-bg;
+                        }
+                        .gestion{
+                            color: $status-orange-txt;
+                            background-color: $status-orange-bg;
+                        }
+                        img{
+                            width: 100%;
+                            max-width: 482px;
+                            height: auto;
+                        }
+                    }
+                    .card-body-place{
+                        width: 60%;
+                        padding: 15px 0 0 0;
+                        margin-left: 40px;
+                        .card-header-place{
+                            font-size: 22px;
+                            font-family: $font-RobotoBold;
+                            color: $gray;
+                        }
+                        .card-info-place{
+                            font-size: 32px;
+                            font-family: $font-RobotoBold;
+                            font-weight: 600;
+                            color: $blue-navy;
+                            padding: 30px 0;
+                        }
+                        .card-commun-place{
+                            font-family: $font-RobotoRegular;
+                            color: $gray;
+                            font-size: 22px;
+                            padding-bottom: 20px;
+                            border-bottom: 1px solid $gray-light;
+                        }
+                        .card-footer-place{
+                            display: flex;
+                            justify-content: space-between;
+                            padding-top: 35px;
+                            .btn-orange{
+                                width: 295px;
+                                height: 55px;
+                                background-color: $orange;
+                                border-radius: 5px;
+                                font-family: $font-RobotoBold;
+                                font-size: 22px;
+                                color: $white;             
+                                border: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .more-info-place{
+            padding: 8% 0 10%;
+            text-align: center;
+            width: 100%;
+            a{
+                font-size: 22px;
+                font-family: $font-RobotoBold;
+                color: $orange;
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+@media screen and (min-width:$media-sm) and (max-width:$media-md){
+    .container{
+        .filter{
+            .row{
+                padding-bottom: 50px;
+                .filterText{
+                    span{
+                        font-size: 18px;
+                        line-height: 20px;
+                    }
+                }
+            }
+        }
+    
+        .detailsProp{
+            .detailsContent{
+                .card-container-place{
+                    .card-place{
+                        .card-image-place{
+                            width: 50%;
+                            .status{
+                            }
+                            img{
+                            }
+                        }
+                        .card-body-place{
+                            .card-header-place{
+                                font-size: 18px;
+                            }
+                            .card-info-place{
+                                font-size: 26px;
+                            }
+                            .card-commun-place{
+                                font-size: 20px;
+                            }
+                            .card-footer-place{
+                                .btn-orange{
+                                    font-size: 18px;
+                                    width: 245px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .more-info-place{
+                a{
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:$media-sm){
+    .container{
+        .filter{
+            .row{
+                padding-top: 20px;
+                padding-bottom: 30px;
+                .filterText{
+                    span{
+                        font-size: 14px;
+                        line-height: 20px;
+                    }
+                }
+            }
+        }
+    
+        .detailsProp{
+            .detailsContent{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                .card-container-place{    
+                    padding: 0;
+                    border-radius: 10px;
+                    border: 1px solid $gray-light;
+                    max-width: 482px;
+                    margin-bottom: 25px;
+                    .card-place{
+                        flex-wrap: wrap;
+                        .card-image-place{
+                            width: 100%;
+                            .status{
+                            }
+                            img{
+                                border-top-right-radius: 10px;
+                                border-top-left-radius: 10px;
+                            }
+                        }
+                        .card-body-place{
+                            width: 100%;
+                            text-align: center;
+                            margin: 0;
+                            padding: 15px 20px 0;
+                            .card-header-place{
+                                font-size: 14px;
+                            }
+                            .card-info-place{
+                                font-size: 18px;
+                            }
+                            .card-commun-place{
+                                font-size: 16px;
+                                line-height: 20px;
+                            }
+                            .card-footer-place{
+                                flex-wrap: wrap;
+                                padding: 20px 0;
+                                .card-footer-place-info{
+                                text-align: center;
+                                width: 100%;
+                                }
+                                .btn-orange{
+                                    margin-top: 20px;
+                                    font-size: 14px;
+                                    width: 100%;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .more-info-place{    
+                padding: 6% 0 6%;
+                a{
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}

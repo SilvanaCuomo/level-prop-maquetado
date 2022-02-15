@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<!--Nav-->
+<nav class="container">
+    <div class="menu-top">
+        <div class="row">
+            <div class="menuTop">
+                <a class="menuMobile"></a>
+                <div class="item-menu-left">
+                    <a href="#/"><img class="logo colors" src="data:image/png;base64,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" alt="Logo Level"></a>
+                </div>
+                <div class="item-menu-right">
+                    <button type="button" class="login">LOGIN</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="navBar">
+        <div class="row">
+                <a href="#/propiedades"><span class="">Propiedades</span></a>
+                <a href="#/pagos"><span class="">Mis pagos</span></a>
+                <a href="#/"><span class="">Button</span></a>
+                <a href="#/"><span class="">Button</span></a>
+                <a href="#/"><span class="">Button</span></a>
+        </div>
+    </div>
+</nav>
+<!--/Nav-->
+<!--Properties-->
+<!--Masthead-->
+<header>
+<div class="container">
+    <div class="HeroHeader">
+        <!--div class="HeroHeaderImg">
+            <img src="assets/images/masthead.png" alt="planta-header" class="">
+        </div -->
+        <div class="row">
+            <div class="HeroHeaderCopy">
+                <h2 class="HeroHeaderTitle">Propiedades</h2>
+                <p class="HeroHeaderText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <button type="button" class="HeroHeaderButton">QUIERO PUBLICAR</button></button>
+            </div>
+        </div>
+    </div>
+</div>
+</header>
+<!--/Masthead-->
+<!--Filter-->
+<div class="container">
+    <section class="filter">
+        <div class="row">
+            <div class="filterText"><span>Portal home > Propiedades</span></div>
+        </div>
+    </section>
+    <!--/Filter-->
+    <!--Details horisontales-->
+    <section>
+        <div class="detailsProp">
+            <div class="row detailsContent">
+                <div class="card-container-place first">
+                    <div class="card-place">
+                        <div class="card-image-place">
+                            <div class="status publicado">Pubicada</div>
+                            <img id="" src="assets/images/small.png" alt="planta-small" class="">
+                        </div>
+                        <div class="card-body-place">
+                            <div class="card-header-place">
+                                <span>ID: PROPIEDAD</span>
+                            </div>
+                            <div class="card-info-place">
+                                <span>Nombre de la propiedad</span>
+                            </div>
+                            <div class="card-commun-place">
+                                <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+                            </div>
+                            <div class="card-footer-place">
+                                <div class="card-footer-place-info">
+                                    <span>Lorem Ipsum: </span><br><span>Lorem ipsum dolor sit amet</span></span>
+                                </div>
+                                <button type="button" class="btn btn-orange">Gestionar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-container-place">
+                    <div class="card-place">
+                        <div class="card-image-place">
+                            <div class="status arrendado">Arrendado</div>
+                            <img id="" src="assets/images/small.png" alt="planta-small" class="">
+                        </div>
+                        <div class="card-body-place">
+                            <div class="card-header-place">
+                                <span>ID: PROPIEDAD</span>
+                            </div>
+                            <div class="card-info-place">
+                                <span>Nombre de la propiedad</span>
+                            </div>
+                            <div class="card-commun-place">
+                                <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+                            </div>
+                            <div class="card-footer-place">
+                                <div class="card-footer-place-info">
+                                    <span>Lorem Ipsum:</span><br><span>Lorem ipsum dolor sit amet</span></span>
+                                </div>
+                                <button type="button" class="btn btn-orange">Gestionar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-container-place last">
+                    <div class="card-place">
+                        <div class="card-image-place">
+                            <div class="status gestion">Gestión Level</div>
+                            <img id="" src="assets/images/small.png" alt="planta-small" class="">
+                        </div>
+                        <div class="card-body-place">
+                            <div class="card-header-place">
+                                <span>ID: PROPIEDAD</span>
+                            </div>
+                            <div class="card-info-place">
+                                <span>Nombre de la propiedad</span>
+                            </div>
+                            <div class="card-commun-place">
+                                <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+                            </div>
+                            <div class="card-footer-place">
+                                <div class="card-footer-place-info">
+                                    <span>Lorem Ipsum: </span><br>Lorem ipsum dolor sit amet</span></span>
+                                </div>
+                                <button type="button" class="btn btn-orange">Gestionar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="more-info-place">
+                <a>Ver más</a>
+            </div>
+        </div>
+    </section>
+    <!--/Details-->
+</div>
+<!--/Properties-->
+<!--Whats-->
+<div id="clgo-wsp">
+	<iframe allowfullscreen="" title="Cliengo Widget WhatsApp" id="wspIframe" src="https://wb.cliengo.com/iframe.html" class="ldkwsp-collapsed-height" style="z-index: 1999999; background-color: transparent; border: none; width: 115px; height: 86px; max-width: 260px; position: fixed; right: 0px; bottom: 0px;">
+	</iframe>
+</div>
+<!--/Whats-->
+<!--Footer-->
+<footer class="container">
+	<div class="sociales-container">
+		<div class="row">
+			<div class="navItem">
+				<nav class="links">
+                    <a href="#/level"><span class="">Sobre Level</span></a>
+                    <a href="#/arrendar"><span class="">¿Cómo arrendar?</span></a>
+                    <a href="#/contacto"><span class="">Contacto</span></a>
+                </nav>
+				<div class="social">
+					<div class="icondefault">
+						<a target="_blank" href=""><img src="assets/images/social/ig.svg"/></a>
+					</div>
+                    <div class="icondefault">
+						<a target="_blank" href=""><img src="assets/images/social/tw.svg"/></a>
+                    </div>
+					<div class="icondefault">
+						<a target="_blank" href=""><img src="assets/images/social/fb.svg"/></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+    <div class="footer-container">
+        <div class="row">
+            <div class="info-footer">
+                <div class="logos-footer">
+                    <img class="logo-level" src="data:image/png;base64,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" alt="logo Level"><img class="logo-eurocorp" src="data:image/png;base64,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" alt="logo Eurocorp">
+                </div>
+                <div class="copy-footer">
+                    <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copy-container">
+        <div class="row">
+            <div class="copy-right">
+                <small>&copy; Todos los derechos reservados | LEVEL 2021</small><br>
+                <a class="" href="http://www.eurocorp.cl/eurodenuncias/" target="_blank" rel="noopener noreferrer">Línea ética</a>
+            </div>
+        </div>
+    </div>
+</footer>
+<!--/Footer-->
+</body>
+</html>
